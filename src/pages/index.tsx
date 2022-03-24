@@ -23,6 +23,7 @@ export default function Login() {
     resolver: yupResolver(signInFormSchema)
   })
   const { signIn } = useAuth()
+  console.log(process.env.API_URL)
   const toast = useToast()
   const handleSignIn: SubmitHandler<SignInFormData> = async ({ email, password }) => {
     await new Promise(resolve => setTimeout(resolve, 2000))
