@@ -10,8 +10,8 @@ export const theme = extendTheme({
       
       },
     fonts:{
-        heading:'Inter',
-        body: 'Inter'
+        heading:'Archivo',
+        body: 'Archivo'
     },
     components:{
         Button:{
@@ -19,6 +19,14 @@ export const theme = extendTheme({
                 colorScheme:'purple'
             }
         },
+        Heading:{
+            baseStyle:{
+                color:'gray.600'
+            }
+        },
+        Input:{
+
+        }
     },
     styles:{
         global:{
