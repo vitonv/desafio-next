@@ -45,8 +45,8 @@ export default function SignUp() {
             router.push('/')
         } catch (error) {
             toast({
-                title: 'Conta criada.',
-                description: "Suas credenciais foram registradas em nosso sistema.",
+                title: 'Erro ao tentar cadastrar.',
+                description: "O email o já está sendo utilizado por outra conta.",
                 status: 'error',
                 position: 'top-right',
                 duration: 4000,
